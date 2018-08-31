@@ -1,0 +1,47 @@
+.add-blog,
+.edit-blog {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+.add-blog label,
+.edit-blog label {
+  display: block;
+  margin: 20px 0 10px;
+}
+.add-blog input[type="text"],
+.edit-blog input[type="text"],
+.add-blog textarea,
+.edit-blog textarea,
+.add-blog select,
+.edit-blog select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+}
+.add-blog textarea,
+.edit-blog textarea {
+  min-height: 260px;
+}
+.add-blog .checkboxes label,
+.edit-blog .checkboxes label {
+  display: inline-block;
+  margin-top: 0;
+}
+.add-blog .checkboxes input[type="checkbox"],
+.edit-blog .checkboxes input[type="checkbox"] {
+  margin-right: 10px;
+  display: inline-block;
+}
+.add-blog button,
+.edit-blog button {
+  display: block;
+  margin: 20px 0;
+  background: crimson;
+  padding: 10px 20px;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}

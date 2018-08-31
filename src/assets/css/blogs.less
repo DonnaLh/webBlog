@@ -1,0 +1,211 @@
+/*博客总览页面样式和博客管理页面样式*/
+html,body{width:100%;height:100%; overflow-x:hidden;  background:#f5f6f7;}
+.blogs{
+
+  height:100%;
+  & header h2{width:100%; height:60px; line-height:60px; text-align:center; font-size:26px;}
+  & .blog-content{
+    box-sizing:border-box;
+    padding:10px 60px;
+    width:100%;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-between;
+    & article{
+      background:#fff;
+      flex:0 1 auto;
+      width:100%;
+      & input{
+        width:100%;
+        height:34px;
+        padding:20px;
+        box-sizing:border-box;
+        //border:3px solid #eee;
+        //border-radius:6px;
+        //box-shadow:3px 3px 2px #fff;
+      }
+      & .single-blog{
+        padding:20px;
+        margin:20px 0;
+        box-sizing:border-box;
+        background:#f5f5f5;
+        border:1px solid #e3e3e3;
+        &:hover{
+          background:#e3e3e3;
+        }
+        & h2{
+          line-height:30px;
+        }
+        & p{
+          margin-top:10px;
+          line-height:24px;
+        }
+      }
+    }
+    & .aside-ad{
+      flex:0 0 280px;
+      background:#fff;
+      margin-left:20px;
+    }
+  }
+}
+
+
+/*
+博客管理界面的样式
+ */
+.blog-manage{
+  & .categries{
+    flex:0 0 280px;
+    background:#ffffff;
+    margin-right:20px;
+    padding:14px;
+    box-sizing:border-box;
+    line-height:30px;
+    & h2{font-size:16px;}
+    & li{
+      border-bottom:1px dotted #999999;
+      & em{
+        float:right;
+        letter-spacing: 6px;
+      }
+      &:hover{
+        background:rgba(100,0,0,.1);
+        cursor: pointer;
+      }
+    }
+    & li.active{
+      color:#ffa000;
+    }
+    & .clock{
+      margin-top:40px;
+      & img{
+        width:12.5%;
+        height:auto;
+      }
+    }
+  }
+  &  .manaEdit{
+    float:right;
+    word-spacing: 4px;
+    & em{
+      cursor: pointer;
+      &:last-of-type{
+        color:#fa4144;
+      }
+    }
+  }
+  & .none{
+    height:100%;
+    background:url("../imgs/none.jpg") no-repeat center center ;
+    text-align:center;
+    font-size:30px;
+    color:#fa4144;
+  }
+}
+
+
+/*侧边栏样式 */
+.aside-ad{
+  width:240px;
+  & h2{
+    margin:6px 10px;
+    border-left:3px solid #ffa000;
+    padding-left:10px;
+    font-size:16px;
+  }
+  & .profile{
+    height:100px;
+    line-height:100px;
+    padding-left:20px;
+    & img{
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      vertical-align:middle;
+    }
+    &  span{
+      margin-left:10px;
+    }
+  }
+  & .intro{
+    padding-left:10px;
+    & .blog-count li{
+      float:left;
+      width:60px;
+      & span,em{
+        display:block; width:100%; height:24px; line-height:24px; text-align:center;
+        &:hover{
+          cursor:pointer;
+        }
+      }
+    }
+  }
+  & .good{
+    & .like{
+      padding-left:10px;
+      & li{
+        margin-top:16px;
+      }
+      & p{
+        color:#20a0ff;
+        line-height:20px;
+      }
+      & em{
+        color:#999999;
+        font-size:14px;
+      }
+    }
+    & .null{
+      background:url("../imgs/null.jpg") no-repeat center center;
+      width:100%;
+      background-size:cover;
+      height:100px;
+    }
+  }
+  & .pic{
+    margin-top:10px;
+    & .ad{
+      height:234px;
+      position:relative;
+      & li{
+        position:absolute;
+        width:100%;
+        transition: opacity 2s;
+        & img{
+          box-sizing:border-box;
+          width:100%;
+          height:234px;
+          border:4px double #fff;
+        }
+      }
+    }
+    & .preview{
+      width:100%;
+      //font-size:0;
+      overflow:hidden;
+      position:relative;
+      height:70px;
+      & .preview-inner{
+        width:2000px;
+        top:0;
+        position:absolute;
+        transition:1s left;
+        & span{
+          display:inline-block;
+          width:60px;
+          height:40px;
+          //box-sizing: border-box;
+          border:3px solid #fff;
+          &.active{
+            border:3px solid #fa4144;
+          }
+        }
+        & img{
+          width:60px;
+          height:40px;
+        }
+      }
+    }
+  }
+}

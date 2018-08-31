@@ -1,0 +1,217 @@
+/*博客总览页面样式和博客管理页面样式*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: #f5f6f7;
+}
+.blogs {
+  height: 100%;
+}
+.blogs header h2 {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 26px;
+}
+.blogs .blog-content {
+  box-sizing: border-box;
+  padding: 10px 60px;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+.blogs .blog-content article {
+  background: #fff;
+  flex: 0 1 auto;
+  width: 100%;
+}
+.blogs .blog-content article input {
+  width: 100%;
+  height: 34px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.blogs .blog-content article .single-blog {
+  padding: 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  border: 1px solid #e3e3e3;
+}
+.blogs .blog-content article .single-blog:hover {
+  background: #e3e3e3;
+}
+.blogs .blog-content article .single-blog h2 {
+  line-height: 30px;
+}
+.blogs .blog-content article .single-blog p {
+  margin-top: 10px;
+  line-height: 24px;
+}
+.blogs .blog-content .aside-ad {
+  flex: 0 0 280px;
+  background: #fff;
+  margin-left: 20px;
+}
+/*
+博客管理界面的样式
+ */
+.blog-manage .categries {
+  flex: 0 0 280px;
+  background: #ffffff;
+  margin-right: 20px;
+  padding: 14px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+.blog-manage .categries h2 {
+  font-size: 16px;
+}
+.blog-manage .categries li {
+  border-bottom: 1px dotted #999999;
+}
+.blog-manage .categries li em {
+  float: right;
+  letter-spacing: 6px;
+}
+.blog-manage .categries li:hover {
+  background: rgba(100, 0, 0, 0.1);
+  cursor: pointer;
+}
+.blog-manage .categries li.active {
+  color: #ffa000;
+}
+.blog-manage .categries .clock {
+  margin-top: 40px;
+}
+.blog-manage .categries .clock img {
+  width: 12.5%;
+  height: auto;
+}
+.blog-manage .manaEdit {
+  float: right;
+  word-spacing: 4px;
+}
+.blog-manage .manaEdit em {
+  cursor: pointer;
+}
+.blog-manage .manaEdit em:last-of-type {
+  color: #fa4144;
+}
+.blog-manage .none {
+  height: 100%;
+  background: url("../imgs/none.jpg") no-repeat center center;
+  text-align: center;
+  font-size: 30px;
+  color: #fa4144;
+}
+/*侧边栏样式 */
+.aside-ad {
+  width: 240px;
+}
+.aside-ad h2 {
+  margin: 6px 10px;
+  border-left: 3px solid #ffa000;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.aside-ad .profile {
+  height: 100px;
+  line-height: 100px;
+  padding-left: 20px;
+}
+.aside-ad .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.aside-ad .profile span {
+  margin-left: 10px;
+}
+.aside-ad .intro {
+  padding-left: 10px;
+}
+.aside-ad .intro .blog-count li {
+  float: left;
+  width: 60px;
+}
+.aside-ad .intro .blog-count li span,
+.aside-ad .intro .blog-count li em {
+  display: block;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.aside-ad .intro .blog-count li span:hover,
+.aside-ad .intro .blog-count li em:hover {
+  cursor: pointer;
+}
+.aside-ad .good .like {
+  padding-left: 10px;
+}
+.aside-ad .good .like li {
+  margin-top: 16px;
+}
+.aside-ad .good .like p {
+  color: #20a0ff;
+  line-height: 20px;
+}
+.aside-ad .good .like em {
+  color: #999999;
+  font-size: 14px;
+}
+.aside-ad .good .null {
+  background: url("../imgs/null.jpg") no-repeat center center;
+  width: 100%;
+  background-size: cover;
+  height: 100px;
+}
+.aside-ad .pic {
+  margin-top: 10px;
+}
+.aside-ad .pic .ad {
+  height: 234px;
+  position: relative;
+}
+.aside-ad .pic .ad li {
+  position: absolute;
+  width: 100%;
+  transition: opacity 2s;
+}
+.aside-ad .pic .ad li img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 234px;
+  border: 4px double #fff;
+}
+.aside-ad .pic .preview {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 70px;
+}
+.aside-ad .pic .preview .preview-inner {
+  width: 2000px;
+  top: 0;
+  position: absolute;
+  transition: 1s left;
+}
+.aside-ad .pic .preview .preview-inner span {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  border: 3px solid #fff;
+}
+.aside-ad .pic .preview .preview-inner span.active {
+  border: 3px solid #fa4144;
+}
+.aside-ad .pic .preview .preview-inner img {
+  width: 60px;
+  height: 40px;
+}
